@@ -18,10 +18,10 @@ function draw() {
   const cy = canvas.height / 2;
   const R  = Math.min(canvas.width, canvas.height) * 0.4;
   for (let i = 0; i < n; i++) {
-    const u = (i / n)*8*Math.PI;
+    const u = (i / n)*10*Math.PI;
     // Fonction mathématique :
-    const x = cx + (R-u*12)*Math.cos(u-t);
-    const y = cy + (R-u*12)*Math.sin(u-t);
+    const x = cx + (R-u*9.5)*Math.cos(u-t);
+    const y = cy + (R-u*9.5)*Math.sin(u-t);
 
     // Couleur qui change avec le temps
     const hue = (i / n * 360 + t * 50) % 360;
